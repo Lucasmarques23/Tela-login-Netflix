@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica neue', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url("/assets/img/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 10;
+    max-width: 450px;
+    height: 550px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    padding-left: 68px;
+    padding-top: 60px;
+}
+
+.inputs {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    padding-left: 68px;
+    padding-right: 68px;
+    margin-top: 29px;
+}
+
+.inputs input {
+    padding: 18px;
+    border-radius: 4px;
+    font-size: 15px;
+    border: none;
+    background-color: #333333;
+    color: white;
+}
+
+.inputs input:focus {
+    background: transparent;
+}
+
+.inputs input::placeholder {
+    font-size: 15px;
+    color: #8c8c8c;
+
+}
+.button-up{
+    margin-top: 40px;
+    width: 70%;
+    margin-left: 68px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #E50914;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    padding-top: 12px;
+    color: #737373;
+}
+
+.checkbox-label input {
+    margin-left: 68px;
+}
+
+.checkbox span a{
+    color: #B3B3B3;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.sign-up {
+    margin-top: 69px;
+    margin-left: 68px;
+    padding-right: 60px;
+    color: #8C8C8C;
+    font-size: 15px;
+}
+
+.group p {
+    margin-top: 13px;
+}
+
+.sign-up span a{
+    color: #fff;
+    text-decoration: none;
+}
